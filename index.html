@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- ============================================================
+       HEAD – Metadados, SEO e importação de recursos
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <meta name="description" content="LAVille Lavanderia Blue – lavagem, higienização e passadoria profissional em Fortaleza. Conheça os pacotes de lavanderia e a tabela de preços 2026." />
+  <meta name="keywords" content="lavanderia, lavanderia em Fortaleza, lavagem de roupas, passadoria, pacotes de lavanderia, LAVille, Lavanderia Blue" />
+  <meta name="author" content="LAVille Lavanderia Blue" />
+  <meta name="theme-color" content="#0D47A1" />
+
+  <!-- Open Graph (compartilhamento em redes sociais e WhatsApp) -->
+  <meta property="og:title" content="LAVille Lavanderia Blue" />
+  <meta property="og:description" content="Lavamos, cuidamos e entregamos suas roupas com qualidade. Conheça nossos pacotes de lavanderia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+
+  <title>LAVille Lavanderia Blue | Lavanderia em Fortaleza</title>
+
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Fontes: Playfair Display (títulos) + DM Sans (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Link de acessibilidade: permite pular direto ao conteúdo com o teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============================================================
+       HEADER – fixo no topo; recebe .scrolled via JS ao rolar
+       ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="container header-inner">
+
+      <!-- Logo (retorna ao início) -->
+      <a href="#inicio" class="logo" aria-label="LAVille Lavanderia Blue – voltar ao início">
+        <img src="logo.png" alt="LAVille Lavanderia Blue" width="1208" height="559" class="logo-img" />
+      </a>
+
+      <!-- Menu principal (no mobile vira painel controlado pelo hambúrguer) -->
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav-list" role="list">
+          <li><a href="#inicio"        class="nav-link">Início</a></li>
+          <li><a href="#servicos"      class="nav-link">Serviços</a></li>
+          <li><a href="#pacotes"       class="nav-link">Pacotes</a></li>
+          <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+          <li><a href="#sobre"         class="nav-link">Sobre Nós</a></li>
+          <li><a href="#contato"       class="nav-link">Contato</a></li>
+        </ul>
+        <!-- CTA exibido apenas dentro do menu mobile -->
+        <a href="#pacotes" class="btn btn-primary btn-full nav-cta">Ver pacotes e preços</a>
+      </nav>
+
+      <!-- CTA do header (desktop) -->
+      <a href="#pacotes" class="btn btn-primary header-cta">Ver pacotes</a>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN – conteúdo principal
+       ============================================================ -->
+  <main id="conteudo">
+
+    <!-- ==========================================================
+         SEÇÃO 1 – HERO
+         ========================================================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+
+      <!-- Fundo decorativo discreto -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+      </div>
+
+      <div class="container hero-content">
+
+        <!-- Coluna de texto -->
+        <div class="hero-text">
+          <span class="hero-badge">Lavanderia profissional em Fortaleza</span>
+
+          <h1 id="hero-title" class="hero-title">
+            Lavamos, cuidamos e entregamos com <em>qualidade</em>.
+          </h1>
+
+          <p class="hero-sub">
+            Seu tempo vale mais. Deixe suas roupas com quem entende de limpeza e cuidado
+            e escolha o pacote ideal para a sua rotina.
+          </p>
+
+          <!-- Ações principais: pacotes, WhatsApp e e-mail -->
+          <div class="hero-actions">
+            <a href="#pacotes" class="btn btn-light btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                <circle cx="7" cy="7" r="1.5"/>
+              </svg>
+              Ver pacotes e preços
+            </a>
+
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20pacotes%20de%20lavanderia."
+               class="btn btn-ghost btn-lg"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+
+          <a href="#contato" class="hero-link">Prefere e-mail? Envie uma mensagem pelo formulário →</a>
+
+          <!-- Números informados pela empresa -->
+          <div class="hero-stats" role="list" aria-label="Números da empresa">
+            <div class="stat" role="listitem">
+              <strong>+2.000</strong>
+              <span>Clientes atendidos</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat" role="listitem">
+              <strong>5 ★</strong>
+              <span>Avaliação dos clientes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card visual decorativo (progresso do serviço) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-wrap">
+            <div class="hero-card">
+              <div class="hc-header">
+                <div class="hc-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M7 6h.01M10 6h.01"/></svg>
+                </div>
+                <div>
+                  <div class="hc-title">Seu pedido</div>
+                  <div class="hc-sub">Cada etapa com cuidado</div>
+                </div>
+              </div>
+
+              <div class="hc-progress">
+                <div class="hc-step done"><div class="hc-dot"></div><span>Recebido</span></div>
+                <div class="hc-line done"></div>
+                <div class="hc-step done"><div class="hc-dot"></div><span>Lavagem</span></div>
+                <div class="hc-line active"></div>
+                <div class="hc-step active"><div class="hc-dot"></div><span>Passadoria</span></div>
+                <div class="hc-line"></div>
+                <div class="hc-step"><div class="hc-dot"></div><span>Pronto</span></div>
+              </div>
+
+              <ul class="hc-list">
+                <li>Produtos de alta qualidade</li>
+                <li>Cuidado adequado a cada tecido</li>
+                <li>Acabamento profissional</li>
+              </ul>
+            </div>
+
+            <div class="hero-card-2">
+              <div class="hc2-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Roupas prontas!</strong>
+                <p>Limpas, passadas e cheirosas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /HERO -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 2 – SERVIÇOS
+         ========================================================== -->
+    <section class="section services" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">O que fazemos</span>
+          <h2 id="services-title" class="section-title">Nossos Serviços</h2>
+          <p class="section-desc">
+            Na correria do dia a dia, o seu tempo é um dos bens mais valiosos. Por isso, oferecemos
+            um serviço de lavanderia completo, seguro e eficiente: você se dedica ao que realmente
+            importa, e nós cuidamos das suas roupas com excelência.
+          </p>
+        </div>
+
+        <!-- Grid de serviços -->
+        <div class="services-grid" role="list">
+
+          <article class="service-card" role="listitem">
+            <div class="sc-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+            </div>
+            <h3>Lavagem de Roupas</h3>
+            <p>Roupas do dia a dia lavadas com produtos de alta qualidade, preservando tecidos e cores.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="sc-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+            </div>
+            <h3>Cama, Mesa e Banho</h3>
+            <p>Higienização de edredons, cobertores, lençóis, toalhas e almofadas, com secagem eficiente.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="sc-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-1.5 2-2 3.5-2 5h4c0-1.5-.5-3-2-5z"/><path d="M10 8 6 21h12L14 8"/><path d="M8.5 14h7"/></svg>
+            </div>
+            <h3>Roupas Delicadas</h3>
+            <p>Tratamento especializado para seda, renda e tecidos delicados, com o máximo de cuidado.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="sc-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18v-2a3 3 0 0 0-3-3h-3l-3-6H8v3H5v8"/><path d="M3 18v2h18v-2"/></svg>
+            </div>
+            <h3>Higienização de Calçados</h3>
+            <p>Limpeza profunda de tênis, sapatos e botas, devolvendo o bom aspecto às suas peças.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="sc-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></svg>
+            </div>
+            <h3>Hotéis e Empresas</h3>
+            <p>Soluções de lavanderia para hotelaria e empresas. Fale conosco para uma proposta.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="sc-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h15a3 3 0 0 0 3-3V9a2 2 0 0 0-2-2h-6a6 6 0 0 0-6 6v0H3z"/><path d="M3 17v2h18"/><path d="M10 7V4h4"/></svg>
+            </div>
+            <h3>Passadoria Profissional</h3>
+            <p>Roupas passadas com acabamento cuidadoso, prontas para usar ou guardar.</p>
+          </article>
+
+        </div>
+
+        <!-- Texto complementar (conteúdo original condensado) -->
+        <div class="services-about">
+          <p>
+            Utilizamos produtos de alta qualidade e técnicas de lavagem adequadas para cada tipo de tecido,
+            preservando as cores, a maciez e a durabilidade das peças. Nossa equipe é treinada para identificar
+            as necessidades de cada item, remover manchas com segurança, eliminar odores e garantir uma
+            higienização profunda, com secagem e passadoria que devolvem suas roupas prontas para o uso.
+          </p>
+          <p>
+            Mais do que lavar roupas, entregamos praticidade, economia de tempo e tranquilidade, com
+            atendimento ágil, pontual e transparente.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- /SERVIÇOS -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 3 – PACOTES DE LAVANDERIA (Tabela de Preços 2026)
+         Substitui a antiga seção "Planos Mensais".
+         Valores oficiais – NÃO alterar, arredondar ou recalcular.
+         ========================================================== -->
+    <section class="section pacotes" id="pacotes" aria-labelledby="pacotes-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Pacotes por quantidade de peças</span>
+          <h2 id="pacotes-title" class="section-title">Pacotes de Lavanderia <span class="nowrap">— Tabela de Preços</span></h2>
+          <p class="section-desc">
+            Escolha o pacote que melhor atende à sua necessidade e fale com a nossa equipe para tirar dúvidas.
+          </p>
+        </div>
+
+        <div class="pacotes-grid" role="list">
+
+          <!-- Pacote 1 -->
+          <article class="pacote-card" role="listitem" aria-labelledby="pacote-1-nome">
+            <div class="pacote-top">
+              <span class="pacote-num">Pacote 1</span>
+              <span class="pacote-qtd">20 peças</span>
+            </div>
+            <h3 id="pacote-1-nome" class="pacote-nome">Roupas Sociais Femininas</h3>
+            <dl class="pacote-precos">
+              <div class="preco-principal">
+                <dt>Preço do pacote</dt>
+                <dd>R$ 228,66</dd>
+              </div>
+              <div class="preco-cartao">
+                <dt>Débito/Crédito</dt>
+                <dd>R$ 235,93</dd>
+              </div>
+            </dl>
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Pacote%201%20%E2%80%94%20Roupas%20Sociais%20Femininas%20(20%20pe%C3%A7as)."
+               class="btn btn-outline btn-full" target="_blank" rel="noopener noreferrer"
+               aria-label="Consultar o Pacote 1 – Roupas Sociais Femininas pelo WhatsApp">Consultar este pacote</a>
+          </article>
+
+          <!-- Pacote 2 -->
+          <article class="pacote-card" role="listitem" aria-labelledby="pacote-2-nome">
+            <div class="pacote-top">
+              <span class="pacote-num">Pacote 2</span>
+              <span class="pacote-qtd">20 peças</span>
+            </div>
+            <h3 id="pacote-2-nome" class="pacote-nome">Peças Simples</h3>
+            <dl class="pacote-precos">
+              <div class="preco-principal">
+                <dt>Preço do pacote</dt>
+                <dd>R$ 152,63</dd>
+              </div>
+              <div class="preco-cartao">
+                <dt>Débito/Crédito</dt>
+                <dd>R$ 157,48</dd>
+              </div>
+            </dl>
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Pacote%202%20%E2%80%94%20Pe%C3%A7as%20Simples%20(20%20pe%C3%A7as)."
+               class="btn btn-outline btn-full" target="_blank" rel="noopener noreferrer"
+               aria-label="Consultar o Pacote 2 – Peças Simples, 20 peças, pelo WhatsApp">Consultar este pacote</a>
+          </article>
+
+          <!-- Pacote 3 -->
+          <article class="pacote-card" role="listitem" aria-labelledby="pacote-3-nome">
+            <div class="pacote-top">
+              <span class="pacote-num">Pacote 3</span>
+              <span class="pacote-qtd">30 peças</span>
+            </div>
+            <h3 id="pacote-3-nome" class="pacote-nome">Peças Simples</h3>
+            <dl class="pacote-precos">
+              <div class="preco-principal">
+                <dt>Preço do pacote</dt>
+                <dd>R$ 217,34</dd>
+              </div>
+              <div class="preco-cartao">
+                <dt>Débito/Crédito</dt>
+                <dd>R$ 224,25</dd>
+              </div>
+            </dl>
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Pacote%203%20%E2%80%94%20Pe%C3%A7as%20Simples%20(30%20pe%C3%A7as)."
+               class="btn btn-outline btn-full" target="_blank" rel="noopener noreferrer"
+               aria-label="Consultar o Pacote 3 – Peças Simples, 30 peças, pelo WhatsApp">Consultar este pacote</a>
+          </article>
+
+          <!-- Pacote 4 -->
+          <article class="pacote-card" role="listitem" aria-labelledby="pacote-4-nome">
+            <div class="pacote-top">
+              <span class="pacote-num">Pacote 4</span>
+              <span class="pacote-qtd">50 peças</span>
+            </div>
+            <h3 id="pacote-4-nome" class="pacote-nome">Peças Simples</h3>
+            <dl class="pacote-precos">
+              <div class="preco-principal">
+                <dt>Preço do pacote</dt>
+                <dd>R$ 354,09</dd>
+              </div>
+              <div class="preco-cartao">
+                <dt>Débito/Crédito</dt>
+                <dd>R$ 365,35</dd>
+              </div>
+            </dl>
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Pacote%204%20%E2%80%94%20Pe%C3%A7as%20Simples%20(50%20pe%C3%A7as)."
+               class="btn btn-outline btn-full" target="_blank" rel="noopener noreferrer"
+               aria-label="Consultar o Pacote 4 – Peças Simples, 50 peças, pelo WhatsApp">Consultar este pacote</a>
+          </article>
+
+          <!-- Pacote 5 -->
+          <article class="pacote-card" role="listitem" aria-labelledby="pacote-5-nome">
+            <div class="pacote-top">
+              <span class="pacote-num">Pacote 5</span>
+              <span class="pacote-qtd">100 peças</span>
+            </div>
+            <h3 id="pacote-5-nome" class="pacote-nome">Peças Simples</h3>
+            <dl class="pacote-precos">
+              <div class="preco-principal">
+                <dt>Preço do pacote</dt>
+                <dd>R$ 688,64</dd>
+              </div>
+              <div class="preco-cartao">
+                <dt>Débito/Crédito</dt>
+                <dd>R$ 710,54</dd>
+              </div>
+            </dl>
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Pacote%205%20%E2%80%94%20Pe%C3%A7as%20Simples%20(100%20pe%C3%A7as)."
+               class="btn btn-outline btn-full" target="_blank" rel="noopener noreferrer"
+               aria-label="Consultar o Pacote 5 – Peças Simples, 100 peças, pelo WhatsApp">Consultar este pacote</a>
+          </article>
+
+          <!-- Pacote 6 -->
+          <article class="pacote-card" role="listitem" aria-labelledby="pacote-6-nome">
+            <div class="pacote-top">
+              <span class="pacote-num">Pacote 6</span>
+              <span class="pacote-qtd">10 peças</span>
+            </div>
+            <h3 id="pacote-6-nome" class="pacote-nome">Cama e Banho</h3>
+            <dl class="pacote-precos">
+              <div class="preco-principal">
+                <dt>Preço do pacote</dt>
+                <dd>R$ 128,21</dd>
+              </div>
+              <div class="preco-cartao">
+                <dt>Débito/Crédito</dt>
+                <dd>R$ 132,28</dd>
+              </div>
+            </dl>
+            <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Pacote%206%20%E2%80%94%20Cama%20e%20Banho%20(10%20pe%C3%A7as)."
+               class="btn btn-outline btn-full" target="_blank" rel="noopener noreferrer"
+               aria-label="Consultar o Pacote 6 – Cama e Banho pelo WhatsApp">Consultar este pacote</a>
+          </article>
+
+        </div>
+
+        <p class="pacotes-obs">
+          Ficou com alguma dúvida sobre os pacotes? <a href="#contato">Envie uma mensagem</a> ou fale conosco pelo
+          <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20pacotes%20de%20lavanderia." target="_blank" rel="noopener noreferrer">WhatsApp</a>.
+        </p>
+
+      </div>
+    </section>
+    <!-- /PACOTES -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 4 – COMO FUNCIONA (sem etapa de coleta)
+         ========================================================== -->
+    <section class="section como-funciona" id="como-funciona" aria-labelledby="steps-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Simples assim</span>
+          <h2 id="steps-title" class="section-title">Como Funciona</h2>
+          <p class="section-desc">Em 4 etapas simples, suas roupas voltam impecáveis.</p>
+        </div>
+
+        <ol class="steps-timeline">
+
+          <li class="step">
+            <div class="step-num" aria-hidden="true">1</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Escolha o seu pacote</h3>
+            <p>Consulte a tabela de preços e escolha o pacote ideal. Se tiver dúvidas, fale com a nossa equipe.</p>
+          </li>
+
+          <li class="step">
+            <div class="step-num" aria-hidden="true">2</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg>
+            </div>
+            <h3>Entregue suas peças</h3>
+            <p>Combine conosco pelo WhatsApp a entrega das suas roupas, conforme as orientações da nossa equipe.</p>
+          </li>
+
+          <li class="step">
+            <div class="step-num" aria-hidden="true">3</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M9.5 13.5c1-1 2-1 3 0s2 1 3 0"/><path d="M7 6h.01M10 6h.01"/></svg>
+            </div>
+            <h3>Cuidamos de tudo</h3>
+            <p>Lavagem, secagem e passadoria com produtos de qualidade e atenção a cada tecido.</p>
+          </li>
+
+          <li class="step">
+            <div class="step-num" aria-hidden="true">4</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+            </div>
+            <h3>Suas roupas prontas</h3>
+            <p>Suas peças ficam prontas, limpas e bem cuidadas, conforme o combinado no atendimento.</p>
+          </li>
+
+        </ol>
+
+        <div class="steps-cta">
+          <a href="#pacotes" class="btn btn-primary">Ver pacotes e preços</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- /COMO FUNCIONA -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 5 – DIFERENCIAIS
+         ========================================================== -->
+    <section class="section diferenciais" id="diferenciais" aria-labelledby="diff-title">
+      <div class="container">
+        <div class="diff-inner">
+
+          <div class="diff-text">
+            <span class="section-tag">Por que nos escolher</span>
+            <h2 id="diff-title" class="section-title">Nossos Diferenciais</h2>
+            <p class="section-desc">Mais do que lavar roupas, entregamos tranquilidade.</p>
+
+            <ul class="diff-list" role="list">
+              <li>
+                <span class="diff-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
+                </span>
+                <div>
+                  <strong>Atendimento ágil</strong>
+                  <p>Prazo padrão de 24 a 48 horas para pedidos comuns.</p>
+                </div>
+              </li>
+              <li>
+                <span class="diff-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7C8 7.2 6 10.6 6 13a6 6 0 0 0 12 0c0-2.4-2-5.8-6-10.3z"/></svg>
+                </span>
+                <div>
+                  <strong>Processo sustentável</strong>
+                  <p>Produtos biodegradáveis e uso consciente de água.</p>
+                </div>
+              </li>
+              <li>
+                <span class="diff-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>
+                </span>
+                <div>
+                  <strong>Produtos premium</strong>
+                  <p>Detergentes e amaciantes de alta qualidade e suavidade.</p>
+                </div>
+              </li>
+              <li>
+                <span class="diff-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </span>
+                <div>
+                  <strong>Equipe especializada</strong>
+                  <p>Profissionais treinados e comprometidos com a sua satisfação.</p>
+                </div>
+              </li>
+              <li>
+                <span class="diff-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                </span>
+                <div>
+                  <strong>Garantia de satisfação</strong>
+                  <p>Não ficou satisfeito? Refazemos o serviço sem custo adicional.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card visual -->
+          <div class="diff-visual" aria-hidden="true">
+            <div class="diff-main-card">
+              <img src="logo.png" alt="" class="dmc-logo" width="1208" height="559" />
+              <strong>Cuidado profissional</strong>
+              <p>Cada peça tratada com atenção, técnica e produtos de qualidade.</p>
+              <div class="dmc-tags">
+                <span>Higienização</span>
+                <span>Secagem</span>
+                <span>Passadoria</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /DIFERENCIAIS -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 6 – SOBRE NÓS
+         ========================================================== -->
+    <section class="section sobre" id="sobre" aria-labelledby="sobre-title">
+      <div class="container sobre-inner">
+
+        <!-- Visual (substitua .sobre-img-bg por uma <img> com foto real da equipe/unidade) -->
+        <div class="sobre-visual" aria-hidden="true">
+          <div class="sobre-img-wrap">
+            <div class="sobre-img-bg">
+              <img src="logo.png" alt="" width="1208" height="559" />
+            </div>
+            <div class="sobre-img-card">
+              <strong>+5 anos</strong>
+              <span>de experiência</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-text">
+          <span class="section-tag">Nossa história</span>
+          <h2 id="sobre-title" class="section-title">Quem Somos</h2>
+
+          <p>
+            A <strong>LAVille Lavanderia Blue</strong> nasceu com a missão de oferecer praticidade,
+            economia de tempo e excelência em cuidados têxteis. Trabalhamos com tecnologia moderna
+            e processos rigorosos de higienização para garantir a satisfação dos nossos clientes.
+          </p>
+          <p>
+            Acreditamos que cada peça de roupa conta uma história. Por isso, tratamos cada uma com
+            o mesmo cuidado que você teria. Somos mais que uma lavanderia: somos parceiros do seu dia a dia.
+          </p>
+
+          <div class="sobre-stats" role="list">
+            <div class="ss-item" role="listitem">
+              <strong>+2.000</strong>
+              <span>Clientes atendidos</span>
+            </div>
+            <div class="ss-item" role="listitem">
+              <strong>+50.000</strong>
+              <span>Peças lavadas</span>
+            </div>
+            <div class="ss-item" role="listitem">
+              <strong>5 ★</strong>
+              <span>Avaliação média</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /SOBRE -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 7 – FAQ (acordeão acessível)
+         ========================================================== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Dúvidas frequentes</span>
+          <h2 id="faq-title" class="section-title">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <h3 class="faq-h">
+              <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+                <span>Como funcionam os pacotes?</span>
+                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+              <p>Os pacotes são definidos pela quantidade de peças e pelo tipo de roupa. Consulte a <a href="#pacotes">tabela de preços</a> e fale com a nossa equipe pelo WhatsApp para escolher a melhor opção.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-h">
+              <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+                <span>Qual é o prazo do serviço?</span>
+                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+              <p>Nosso prazo padrão é de 24 a 48 horas após o recebimento das peças. Para pedidos expressos, consulte a disponibilidade.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-h">
+              <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+                <span>Como entrego minhas roupas?</span>
+                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+              <p>Entre em contato pelo WhatsApp para combinar a entrega das peças. Nossa equipe informará como proceder e as opções disponíveis para receber suas roupas prontas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-h">
+              <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+                <span>Quais são as formas de pagamento?</span>
+                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>
+              <p>Aceitamos Pix, dinheiro e cartões de débito e crédito. Os valores para pagamento no débito/crédito estão indicados em cada pacote da tabela de preços.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-h">
+              <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+                <span>Vocês atendem empresas?</span>
+                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden>
+              <p>Sim. Atendemos hotéis, restaurantes e empresas. Entre em contato para conversarmos sobre a sua necessidade.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /FAQ -->
+
+
+    <!-- ==========================================================
+         SEÇÃO 8 – CONTATO
+         Formulário com envio real de e-mail (ver CONFIGURAÇÃO no script.js e README.md)
+         ========================================================== -->
+    <section class="section contato" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Fale conosco</span>
+          <h2 id="contato-title" class="section-title">Entre em Contato</h2>
+          <p class="section-desc">Envie sua mensagem pelo formulário ou fale diretamente conosco pelo WhatsApp.</p>
+        </div>
+
+        <div class="contato-inner">
+
+          <!-- Formulário -->
+          <form class="contato-form" id="contato-form" novalidate aria-labelledby="form-title">
+            <h3 id="form-title" class="form-title">Envie uma mensagem</h3>
+            <p class="form-note">Campos marcados com <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> são obrigatórios.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo"
+                       required autocomplete="name" maxlength="120" aria-describedby="nome-erro" />
+                <p class="field-error" id="nome-erro" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone <span class="optional">(opcional)</span></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"
+                       autocomplete="tel" inputmode="numeric" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com"
+                     required autocomplete="email" maxlength="160" aria-describedby="email-erro" />
+              <p class="field-error" id="email-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto <span aria-hidden="true">*</span></label>
+              <input type="text" id="assunto" name="assunto" placeholder="Ex.: Dúvida sobre o Pacote 2"
+                     required maxlength="150" list="assuntos-sugeridos" aria-describedby="assunto-erro" />
+              <datalist id="assuntos-sugeridos">
+                <option value="Dúvida sobre os pacotes"></option>
+                <option value="Orçamento para empresa ou hotel"></option>
+                <option value="Roupas delicadas"></option>
+                <option value="Higienização de calçados"></option>
+                <option value="Outro assunto"></option>
+              </datalist>
+              <p class="field-error" id="assunto-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+              <textarea id="mensagem" name="mensagem" rows="5" required maxlength="3000"
+                        placeholder="Conte-nos como podemos ajudar..." aria-describedby="mensagem-erro"></textarea>
+              <p class="field-error" id="mensagem-erro" aria-live="polite"></p>
+            </div>
+
+            <!-- Honeypot anti-spam: invisível para pessoas; robôs costumam preenchê-lo -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="_honey">Não preencha este campo</label>
+              <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full" id="form-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              <span class="btn-label">Enviar mensagem</span>
+            </button>
+
+            <!-- Mensagem de retorno (sucesso, erro de validação ou falha de envio) -->
+            <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+          </form>
+
+          <!-- Informações de contato -->
+          <div class="contato-info">
+
+            <div class="contato-quick">
+              <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20pacotes%20de%20lavanderia."
+                 class="btn btn-whatsapp btn-full" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Falar no WhatsApp
+              </a>
+            </div>
+
+            <div class="ci-block">
+              <div class="ci-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Endereço</strong>
+                <p>Avenida Oliveira Paiva, 1964 – Cidade dos Funcionários<br />Fortaleza, CE – CEP 60822-130</p>
+              </div>
+            </div>
+
+            <div class="ci-block">
+              <div class="ci-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Telefone e WhatsApp</strong>
+                <p><a href="tel:+5585998371212">(85) 99837-1212</a></p>
+              </div>
+            </div>
+
+            <div class="ci-block">
+              <div class="ci-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <p><a href="mailto:lavanderialaville@gmail.com">lavanderialaville@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="ci-block">
+              <div class="ci-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Horário de atendimento</strong>
+                <p>Seg a Sex: 8h às 17h<br />Sáb: 8h às 12h</p>
+              </div>
+            </div>
+
+            <div class="ci-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.063225282931!2d-38.49120752549693!3d-3.7963911435208093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f7c3f2e22d1%3A0xb9412f64077e5b7f!2sAv.%20Oliveira%20Paiva%2C%201964%20-%20Cidade%20dos%20Funcion%C3%A1rios%2C%20Fortaleza%20-%20CE%2C%2060822-130!5e0!3m2!1spt-BR!2sbr!4v1785462521872!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="220"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização da LAVille Lavanderia Blue no Google Maps"
+              ></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /CONTATO -->
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo" aria-label="LAVille Lavanderia Blue – voltar ao início">
+          <span class="logo-name">LAVille</span>
+          <span class="logo-sub">Lavanderia Blue</span>
+        </a>
+        <p>Qualidade, cuidado e praticidade para o seu dia a dia.</p>
+
+        <div class="footer-social" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/laville.lavanderia?igsh=ZjIzZ21jcHl5Zjhv" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/5585998371212" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:lavanderialaville@gmail.com" class="social-link" aria-label="E-mail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Links rápidos do rodapé">
+        <h3>Links rápidos</h3>
+        <ul role="list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#pacotes">Pacotes e preços</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#faq">Perguntas frequentes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <address>
+          <p>Avenida Oliveira Paiva, 1964 – Cidade dos Funcionários, Fortaleza – CE</p>
+          <p><a href="tel:+5585998371212">(85) 99837-1212</a></p>
+          <p><a href="https://wa.me/5585998371212" target="_blank" rel="noopener noreferrer">WhatsApp: (85) 99837-1212</a></p>
+          <p><a href="mailto:lavanderialaville@gmail.com">lavanderialaville@gmail.com</a></p>
+          <p>Seg a Sex: 8h às 17h · Sáb: 8h às 12h</p>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> LAVille Lavanderia Blue. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5585998371212?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20pacotes%20de%20lavanderia."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Falar no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">Falar no WhatsApp</span>
+  </a>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Script principal (carregado ao final do body) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
